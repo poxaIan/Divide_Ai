@@ -7,6 +7,7 @@ import CreateScreen from '../screens/CreateScreen';
 import { RootStackParamList } from './types';
 import EditScreen from '../screens/EditScreen';
 import DespesasScreen from '../screens/DespesasScreen';
+import AddDespesaScreen from '../screens/AddDespesaScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -18,6 +19,7 @@ export default function AppNavigator() {
       <Stack.Screen name="CreateScreen" component={CreateScreen} />
       <Stack.Screen name="EditScreen" component={EditScreen} />
       <Stack.Screen name="DespesasScreen" component={DespesasScreen} options={{ title: 'Despesas' }} />
+      <Stack.Screen name="AddDespesaScreen" component={AddDespesaScreen} options={{ title: 'Adicionar Despesa' }} />
     </Stack.Navigator>
   );
 }
